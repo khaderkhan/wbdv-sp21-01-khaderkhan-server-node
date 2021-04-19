@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://root:root@cluster0.mvpvf.mongodb.net/whiteboard?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://root:root@cluster0.mvpvf.mongodb.net/whiteboard?retryWrites=true&w=majority&ssl=true',
     {useNewUrlParser: true, useUnifiedTopology: true});
 
 const session = require('express-session')

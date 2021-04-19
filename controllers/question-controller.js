@@ -9,4 +9,8 @@ module.exports = function(app) {
    app.get('/api/questions/:qid', (req, res) =>
        questionsService.findQuestionById(req.params['qid'])
            .then(question => res.json(question)))
-}
+    app.get('/api/testing', (req, res) =>{
+        res.send("Working fine")
+    })
+        
+ }
